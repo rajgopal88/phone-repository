@@ -1,13 +1,11 @@
 import React, { Component, Fragment } from 'react';
-import { render } from '@testing-library/react';
+import Header from './Header';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <div>
-          Phone Directory
-        </div>
+        <Header/>
         <button>Add</button>
         <div>
           <span>Name</span>

@@ -1,9 +1,18 @@
 import React, { Component } from 'react';
 
+// Inline styling
+const headerStyle = {
+    textAlign: 'center', 
+    padding: 20, 
+    background: '#000', 
+    color: '#fff', 
+    textTransform: 'uppercase'
+}
+
 // functional component only if we don't have state
 const Header = function(){
     return(
-        <div className="header">
+        <div style={headerStyle}>
           Phone Directory
         </div>
     );

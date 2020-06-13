@@ -5,10 +5,10 @@ import './Header.css'
 // const headerStyle = { textAlign: 'center', padding: 20, background: '#000', color: '#fff', textTransform: 'uppercase' }
 
 // functional component only if we don't have state
-const Header = function(){
+const Header = function(props){
     return(
         <div className="header">
-          Phone Directory
+          {props.heading}
         </div>
     );
 };
@@ -18,7 +18,7 @@ const Header = function(){
 //     render(){
 //         return(
 //             <div className="header">
-//                 Phone Directory
+//                 {this.props.heading}
 //             </div>
 //         )
 //     }

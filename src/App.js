@@ -3,6 +3,11 @@ import Header from './Header.js';
 import './App.css';
 
 class App extends Component {
+
+  clickHandler(message) {
+    alert(message);
+  } 
+
   render() {
     let subscriber = [
       {
@@ -32,7 +37,7 @@ class App extends Component {
             <span className="grid-item">{x.name}</span>
             <span className="grid-item">{x.phone}</span>
             <span className="grid-item">
-              <button className="custom-btn del-btn">Delete</button>
+              <button className="custom-btn del-btn" onClick={this.clickHandler.bind(this, "Delete Handler Clicked")}>Delete</button>
             </span>
             </div>
             })
